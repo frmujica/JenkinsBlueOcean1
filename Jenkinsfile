@@ -1,5 +1,11 @@
 pipeline {
   agent any
+  
+  parameters{
+        string(name:'Name', description:'Nombre')
+        choice(name: 'colores', choices: ['blanco', 'negro'], description:'Elige un color' )
+  }
+  
   stages {
     stage('Hello') {
       environment {
