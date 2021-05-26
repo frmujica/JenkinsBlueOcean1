@@ -7,7 +7,7 @@ pipeline {
         echo 'Paso 1 de la etapa 1'
         sh '''d:\\
 cd d:\\
-dir /a/b > d:\\1.txt
+dir d:\\ > d:\\1.txt
 '''
       }
     }
