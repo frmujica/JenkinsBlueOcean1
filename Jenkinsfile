@@ -1,9 +1,9 @@
 pipeline {
   agent any
   
-  parameters{
-        string(name:'Name', description:'Nombre')
-        choice(name: 'colores', choices: ['blanco', 'negro'], description:'Elige un color' )
+  parameters {
+    string(name: 'Name', description: 'Nombre')
+    choice(name: 'colores', choices: ['blanco', 'negro'], description: 'Elige un color')
   }
   
   stages {
@@ -54,12 +54,5 @@ pipeline {
     }
 
   }
-  environment {
-    Name = 'Nombre'
-    colores = '[\'Blanco\', \'Negro\']'
-  }
-  parameters {
-    string(name: 'Name', description: 'Nombre')
-    choice(name: 'colores', choices: ['blanco', 'negro'], description: 'Elige un color')
-  }
+  
 }
