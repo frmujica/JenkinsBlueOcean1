@@ -48,6 +48,10 @@ pipeline {
     }
 
   }
+  environment {
+    Name = 'Nombre'
+    colores = 'blanco, negro'
+  }
   parameters {
     string(name: 'Name', description: 'Nombre')
     choice(name: 'colores', choices: ['blanco', 'negro'], description: 'Elige un color')
