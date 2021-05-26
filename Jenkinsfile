@@ -50,7 +50,6 @@ pipeline {
   }
   environment {
     Name = 'Nombre'
-    colores = 'blanco, negro'
   }
   parameters {
     string(name: 'Name', description: 'Nombre')
